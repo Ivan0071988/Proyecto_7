@@ -25,3 +25,4 @@ build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram:  # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
+    fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
